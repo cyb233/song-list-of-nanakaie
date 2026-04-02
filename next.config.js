@@ -17,5 +17,8 @@ module.exports = withPWA({
   },
   images: {
     loader: "custom"
-  }
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+},
 })

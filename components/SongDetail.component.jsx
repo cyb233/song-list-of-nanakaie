@@ -32,7 +32,7 @@ export default function SongDetail({
           );
         }}
       >
-        <td className={styles.tableIconTd}>
+        <td className={styles.tableIconTd} style={{ background: "none" }}>
           {song.sticky_top == 1 ? (
             <img
               src="up_arrow.png"
@@ -58,11 +58,12 @@ export default function SongDetail({
         </td>
         <td
           className={styles.noWrapForce}
+          style={{ background: "none" }}
           id={song.paid ? `paid ${song.index}` : song.index}
         >
           {song.song_name}
         </td>
-        <td className={styles.tableIconTd}>
+        <td className={styles.tableIconTd} style={{ background: "none" }}>
           {song.BVID ? (
             <Button
               className={styles.customRandomButton}
@@ -92,9 +93,9 @@ export default function SongDetail({
             <div></div>
           )}
         </td>
-        <td className={styles.noWrapForce}>{song.artist}</td>
-        <td className={styles.noWrapForce}>{song.language}</td>
-        <td className={styles.noWrapForce}>{song.remarks}</td>
+        <td className={styles.noWrapForce} style={{ background: "none" }}>{song.artist}</td>
+        <td className={styles.noWrapForce} style={{ background: "none" }}>{song.language}</td>
+        <td className={styles.noWrapForce} style={{ background: "none" }}>{song.remarks}</td>
       </tr>
     ))
   ) : (

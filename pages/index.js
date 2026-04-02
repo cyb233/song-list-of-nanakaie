@@ -642,12 +642,12 @@ export default function Home() {
                   <Table responsive>
                     <thead>
                       <tr>
-                        <th></th>
-                        <th>歌名</th>
-                        <th></th>
-                        <th>歌手</th>
-                        <th>语言</th>
-                        <th>备注</th>
+                        <th style={{ background: "none" }}></th>
+                        <th style={{ background: "none" }}>歌名</th>
+                        <th style={{ background: "none" }}></th>
+                        <th style={{ background: "none" }}>歌手</th>
+                        <th style={{ background: "none" }}>语言</th>
+                        <th style={{ background: "none" }}>备注</th>
                       </tr>
                     </thead>
                     <tbody className="songList">
